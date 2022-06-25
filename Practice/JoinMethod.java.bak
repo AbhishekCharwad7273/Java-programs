@@ -1,0 +1,82 @@
+
+
+
+class OnlineExam extends Thread
+{
+	public void run()
+	{
+		System.out.println("Appered Exam");
+		try
+		{
+			Thread.sleep(1000);
+		}
+		catch(java.lang.Exception e)
+		{
+				
+		}
+		System.out.println("Exam pass Successfully");
+		
+	
+	}
+}
+
+class Medical extends Thread
+{
+	public void run()
+	{
+		System.out.println("Check Medical");
+		try
+		{
+			Thread.sleep(1000);
+		}
+		catch(java.lang.Exception e)
+		{
+			
+			
+		}
+		System.out.println("Medically Cleared");
+		
+		
+	}
+}
+
+
+class DriveExam extends Thread
+{
+	public void run()
+	{
+		System.out.println("Drive the car");
+		try
+		{
+			Thread.sleep(1000);
+		}
+		catch(java.lang.Exception e)
+		{
+			
+			
+		}
+		System.out.println("Drive Exam Pass successfully and Give licence");
+		
+	}
+}
+
+
+public class JoinMethod
+{
+	public static void main(String args[])throws InterruptedException
+	{
+		OnlineExam o=new OnlineExam();
+		o.start();
+		o.join();
+		
+		Medical M=new Medical();
+		M.start();
+		M.join();
+		
+		
+		DriveExam D=new DriveExam();
+		D.start();
+		
+	}
+}
+

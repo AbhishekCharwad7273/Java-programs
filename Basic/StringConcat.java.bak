@@ -1,0 +1,18 @@
+
+public class StringConcat
+{
+	public static void main(String args[])
+	{
+		String s1="Abhi";
+		String s2="Charwad";
+		
+		System.out.println(s1+s2);//AbhiCharwad
+		System.out.println(s1+10);//Abhi10
+		System.out.println(s1+10+20);//Abhi1020
+		System.out.println(10+20+s1);//30Abhi
+		System.out.println(10+s1+30);//10Abhi30
+		System.out.println(s1+20/10);//Abhi2
+		//System.out.println(s1+10-5);//because of bodmas it will show error
+		System.out.println(String.join(",",s1,s2));
+	}
+}

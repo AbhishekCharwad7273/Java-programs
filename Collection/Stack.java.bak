@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Stack//last in first our Data structure
+{
+	public static void main(String args[])
+	{
+		Stack<String> animals=new Stack<>();
+		animals.push("Cat");
+		System.out.println(animals);
+		
+	}
+	
+}

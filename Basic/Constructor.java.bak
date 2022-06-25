@@ -1,0 +1,20 @@
+public class Constructor
+{
+
+
+ Constructor()
+{
+	int sid=10;
+	String name="Abhi";
+
+	
+
+}
+	public static void main(String args[])
+	{
+		Constructor S=new Constructor();
+		
+	}
+
+}
+

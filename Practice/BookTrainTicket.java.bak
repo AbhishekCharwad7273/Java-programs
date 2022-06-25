@@ -1,0 +1,42 @@
+
+
+
+class BookTicket extends Thread
+{
+		int total_seat=10;
+		
+		public void book(int seat)
+		{
+			if(total_seat>=seat)
+			{
+				System.out.println("Seats Book Successfully");
+				total_seat=total_seat-seat;
+				System.out.println("Seats remaining :"+total_seat);
+			}
+			
+			else
+			{
+				System.out.println("seat are not book ");
+				System.out.println("remaining seat"+total_seat);
+			}
+		}
+		
+		public int run()
+		{
+			book();
+		}
+		
+		public static void main(String args[])
+		{
+			BookTicket obj=new BookTicket();
+			obj.book(7);
+			obj.start();
+			
+			BookTicket obj1=new BookTicket();
+			obj1.book(7);
+			obj1.start();
+		}
+		
+}
+
+

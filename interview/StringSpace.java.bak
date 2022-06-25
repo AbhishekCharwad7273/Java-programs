@@ -1,0 +1,16 @@
+//8>remove white spaces in string
+
+
+import java.util.*;
+
+public class StringSpace
+{
+	public static void main(String args[])
+	{
+		//Scanner sc=new Scanner(System.in);
+		//System.out.println("Enter The String");
+		String Str="Abhi  Charwad";
+		
+		System.out.println("After Removed Spaces String will be :-"+Str.trim());
+	}
+}
